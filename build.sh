@@ -36,9 +36,15 @@ mkdir -p "${CONTENTS}/Resources"
 
 cp "${BUILD_DIR}/${APP_NAME}"              "${CONTENTS}/MacOS/${APP_NAME}"
 cp "Info.plist"    "${CONTENTS}/Info.plist"
+if [ -f "AppIcon.icns" ]; then
+    cp "AppIcon.icns" "${CONTENTS}/Resources/AppIcon.icns"
+fi
 
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister \
     -f "${APP_BUNDLE}" 2>/dev/null || true
+
+# Ad-hoc sign the application bundle to avoid 'damaged' error
+codesign --force --deep -s - "${APP_BUNDLE}"
 
 echo ""
 echo "✅ Derleme tamamlandı!"

@@ -22,8 +22,18 @@ The project consists of two parts:
 
 ### 1. The macOS App
 *(You can download the latest `.dmg` from the [Releases](../../releases) tab, or build it from source).*
-- Move `YTMusicMenuBar.app` to your `Applications` folder and open it. 
-- *Note: If macOS prevents the app from opening, right-click the app icon and select "Open".*
+- Open the `.dmg` file and drag `YTMusicMenuBar.app` to your `Applications` folder. 
+- Open it from your Applications folder.
+
+> [!WARNING]
+> **"App is damaged and can't be opened" Error:**
+> Because this app is not signed with a paid Apple Developer certificate, macOS Gatekeeper might show a "damaged" error when you try to open it after downloading. To fix this:
+> 1. Open your **Terminal**.
+> 2. Run the following command to remove the quarantine flag:
+> ```bash
+> xattr -cr /Applications/YTMusicMenuBar.app
+> ```
+> 3. Now you can open the app normally!
 
 ### 2. The Browser Extension
 For the app to communicate with YouTube Music, you must install the companion browser extension:
