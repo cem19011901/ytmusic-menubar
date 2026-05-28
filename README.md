@@ -61,6 +61,11 @@ cd ytmusic-menubar
 
 If this app makes your daily music listening easier, the best way to support the development right now is to give this repository a ⭐️ Star on GitHub!
 
+<br>
+<a href="https://2088416700610.gumroad.com/l/uvxsn" target="_blank">
+  <img src="https://img.shields.io/badge/Support_on-Gumroad-ff90e8?style=for-the-badge&logo=gumroad&logoColor=black" alt="Support on Gumroad">
+</a>
+
 ## License
 
 MIT License
