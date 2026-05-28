@@ -26,14 +26,21 @@ The project consists of two parts:
 - Open it from your Applications folder.
 
 > [!WARNING]
-> **"App is damaged and can't be opened" Error:**
-> Because this app is not signed with a paid Apple Developer certificate, macOS Gatekeeper might show a "damaged" error when you try to open it after downloading. To fix this:
+> **macOS Security / Gatekeeper Warnings:**
+> Because this app is not signed with a paid Apple Developer certificate, macOS might show a warning when you first open it. Here is how to fix the common errors:
+> 
+> **If it says "Apple could not verify..." or "Unidentified Developer":**
+> 1. Go to your `Applications` folder.
+> 2. **Right-click** (or Control-click) on `YTMusicMenuBar.app` and select **Open**.
+> 3. A similar warning will appear, but this time it will have an **Open** button. Click it. (You only need to do this once).
+> 
+> **If it says "App is damaged and can't be opened":**
 > 1. Open your **Terminal**.
 > 2. Run the following command to remove the quarantine flag:
 > ```bash
 > xattr -cr /Applications/YTMusicMenuBar.app
 > ```
-> 3. Now you can open the app normally!
+> 3. You can now open the app normally!
 
 ### 2. The Browser Extension
 For the app to communicate with YouTube Music, you must install the companion browser extension:
