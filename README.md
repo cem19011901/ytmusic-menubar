@@ -49,9 +49,7 @@ cd ytmusic-menubar
 
 ## Support
 
-If this app makes your daily music listening easier, consider supporting the development! ☕️
-
-<a href="https://www.buymeacoffee.com/" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+If this app makes your daily music listening easier, the best way to support the development right now is to give this repository a ⭐️ Star on GitHub!
 
 ## License
 
