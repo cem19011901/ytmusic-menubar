@@ -1,0 +1,10 @@
+.DS_Store
+.build/
+YTMusicMenuBar.app/
+*.o
+*.dia
+*.swiftdoc
+*.swiftmodule
+*.swiftsourceinfo
+*.abi.json
+*.dSYM/
